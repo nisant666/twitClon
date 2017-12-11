@@ -1,0 +1,63 @@
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = undefined;
+
+var _react = require('react');
+
+var _react2 = babelHelpers.interopRequireDefault(_react);
+
+var _nativeBase = require('native-base');
+
+var HeaderExample = function (_Component) {
+  babelHelpers.inherits(HeaderExample, _Component);
+
+  function HeaderExample() {
+    babelHelpers.classCallCheck(this, HeaderExample);
+    return babelHelpers.possibleConstructorReturn(this, (HeaderExample.__proto__ || Object.getPrototypeOf(HeaderExample)).apply(this, arguments));
+  }
+
+  babelHelpers.createClass(HeaderExample, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        _nativeBase.Container,
+        null,
+        _react2.default.createElement(
+          _nativeBase.Header,
+          null,
+          _react2.default.createElement(
+            _nativeBase.Left,
+            null,
+            _react2.default.createElement(
+              _nativeBase.Button,
+              { transparent: true },
+              _react2.default.createElement(_nativeBase.Icon, { name: 'arrow-back' })
+            )
+          ),
+          _react2.default.createElement(
+            _nativeBase.Body,
+            null,
+            _react2.default.createElement(
+              _nativeBase.Title,
+              null,
+              'Home'
+            )
+          ),
+          _react2.default.createElement(
+            _nativeBase.Right,
+            null,
+            _react2.default.createElement(
+              _nativeBase.Button,
+              { transparent: true },
+              _react2.default.createElement(_nativeBase.Icon, { name: 'menu' })
+            )
+          )
+        )
+      );
+    }
+  }]);
+  return HeaderExample;
+}(_react.Component);
+
+exports.default = HeaderExample;
